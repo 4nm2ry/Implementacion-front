@@ -1,6 +1,6 @@
 /* Estilos Generales*/
 
-@import url(https://fonts.google.com/specimen/Be+Vietnam) ;
+@import url(https://fonts.google.com/specimen/Be+Vietnam+Pro) ;
 
 * {
     box-sizing: border-box;
@@ -166,3 +166,166 @@ h1{
 
 /*Estilos de la seccion lo mejor del mes*/
 
+.best-of-the-month-wraper{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+.best-of-the-month h3{
+    font-size:39.21px;
+    font-weight: 700;
+    line-height: 61.41px;
+    text-align: center;
+}
+.best-of-the-month-article{
+    background-color: #FAFAFA;
+    width: 445px;
+    height: 254px;  
+}
+
+.best-of-the-month img{
+    width: 60px;
+    height: 60px;
+}
+.best-of-the-month button {
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 44px;
+    padding: 10px, 25px;
+    margin-top: 40px;;
+    width: 134px;
+    }
+
+/*Estilos teams*/
+.teams-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.teams{
+background-color: #8B48BF;
+color:#FFFFFF;
+height: 168px;
+width: 100%;
+}
+.teams button{
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); 
+    color: #8B48BF;
+    font-size: 15px;
+    height: 44px;
+    padding: 10px, 25px;
+    margin-top: 40px;;
+    width: 134px;
+}
+.teams h2{
+    font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+width: 400px;
+height: 96px;
+}
+
+/*Estilos footer*/
+footer{
+    background-color: #1E1E26;
+    padding: 50px 0px 50px 0px;
+}
+.footer-wraper{
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    gap: 100px;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+/*Seccion de redes sociales*/
+.redes-sociales{
+display: flex;
+flex-direction: column;
+gap:80px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 13px;
+}
+/*Seccion de accesos*/
+.accesos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 219px;
+}
+footer ul{
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 90px;
+}
+/*Formulario*/
+footer input{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 10px;
+    gap: 10px;
+    width: 201px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+}
+footer button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 63px;
+    height: 42px;
+    background: #8B48BF;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    border:none;
+}
+input :placeholder{
+    color:#A0A0A0;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.buscador{
+    display: flex;
+    flex-direction: column;
+}
+/*Derechos*/
+.derechos{
+    padding-top: 92px;
+    text-align: right;
+    color:#8C8C94;
+    font-weight:500;
+    font-size:12.5px;
+}
