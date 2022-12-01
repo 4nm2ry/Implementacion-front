@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css">
     <title>sportit</title>
-    </head>
+    <!--Tipografía Be Vietnan-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
     <header>
+
         <div class="header-wraper">
             <div>
                 <img src="/img/logo.svg" alt="Logo de la marca" />
@@ -18,18 +23,18 @@
         
             <div>
                 <nav>
-                    <ul class="nav-list" type="none" active>
-                        <li>Sports</li>
-                        <li>Products</li>
-                        <li>About Us</li>
-                        <li>Trainning</li>
-                        <li>Community</li>
+                    <ul class="nav-list" type="none">
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Trainning</a></li>
+                        <li><a href="#">Community</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div>
-                <button class="nav-button">Contact</button>
+                <button type="button" class="nav-button">Contact</button>
             </div>
         </div>
     </header>
@@ -43,11 +48,11 @@
                 <div class="hero-div">
                     <h1>LIVE:Follow the Telcel Huawei Mexico Open 2022 for free</h1>
                     <p class="hero-p"> The final Open the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-                    <button class="hero-button">Contact</button>
+                    <button type="button" class="hero-button">Contact</button>
                 </div>
             </div>
         </hero>
-    </main>
+
 
     <div class="difference-bar">
         <div class="difference-bar-wraper">
@@ -58,51 +63,62 @@
     <section class="tracking-company-section">
         <div class="tracking-company-section-wraper">
             <article class="tracks">
-                <button class="tracking-company-section-button">01</button>
+                <button type="button" class="tracking-company-section-button">01</button>
+                <div>
                 <h4>Track company-wide progress</h4>
                 <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+            </div>
             </article>
             <article class="tracks">
-                <button class="tracking-company-section-button">02</button>
+                <button type="button" class="tracking-company-section-button">02</button>
+                <div>
                 <h4>Advance built-in reports</h4>
                 <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+            </div>
             </article>
             <article class="tracks">
-                <button class="tracking-company-section-button">03</button>
+                <button type="button" class="tracking-company-section-button">03</button>
+                <div>
                 <h4>Everything you need in one place</h4>
                 <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+            </div>
             </article>
         </div>
     </section>
     <section class="best-of-the-month">
     <div class="best-of-the-month-wraper">
         <h3>Best of the month</h3>
-        <div>
-        <article class="best-of-the-month-article">
+        <div class="best-of-the-month-article">
+        <article class="container">
             <img src="/img/avatar-sanyo.png" alt="imagen de perfil de Sanyo">
             <h4>Sanyo</h4>
             <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
         </article>
-        <article class="best-of-the-month-article">
+        <article  class="container">
             <img src="/img/avatar.lebron.png" alt="imagen de perfil de Lebron">
             <h4>Lebron</h4>
             <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
         </article>
-        <article class="best-of-the-month-article">
+        <article  class="container">
             <img src="/img/avatar-navarro.png" alt="imagen de perfil de Navarro">
             <h4>Navarro</h4>
             <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
         </article>
         </div>
-        <button>More</button>
+        <div class="container-button">
+            <button type="button">More</button>
+        </div>
+        
     </div>
     </section>
     <section class="teams">
         <div class="teams-wraper">
             <h2>Get to know the best teams of the year</h2>
-            <button>Go for it</button>
+            <button type="button">Go for it</button>
         </div>
     </section>
+
+    </main>
     <footer>
         <div class="footer-wraper">
         <section class="redes-sociales">
@@ -110,34 +126,34 @@
                 <img src="/img/logofooter.png" alt="logo de sportit">
             </div>
             <div class="icon">
-                <img src="/img/icon-facebook.svg"alt=icono de facebook>
-                <img src="/img/icon-youtube.svg"alt=icono de youtube>
-                <img src="/img/icon-twitter.svg"alt=icono de twitter>
-                <img src="/img/icon-pinterest.svg"alt=icono de pinterest>
-                <img src="/img/icon-instagram.svg"alt=icono de instagram>
+                <a href="https://www.facebook.com/" target="_blank"><img src="/img/icon-facebook.svg"alt="icono de facebook"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="/img/icon-youtube.svg"alt="icono de youtube"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="/img/icon-twitter.svg"alt="icono de twitter"></a>
+                <a href="https://www.pinterest.cl/" target="_blank"><img src="/img/icon-pinterest.svg"alt="icono de pinterest"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon-instagram.svg"alt="icono de instagram"></a>
             </div>
         </section>
         <section class="accesos">
             <nav>
                 <ul type="none">
-                    <li>Home</li>
-                    <li>Pricing</li>
-                    <li>Products</li>
-                    <li>About Us</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
                 </ul>
             </nav>
             <nav>
                 <ul type="none">
-                    <li>Trainning</li>
-                    <li>Community</li>
-                    <li>Privacy Policy</li>
+                    <li><a href="#">Trainning</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </nav>
         </section>
         <section class="buscador">
-        <form>
-            <input placeholder="Update in your inbox...">
-            <button>Go</button>
+        <form id="formulario" action="#">
+            <input id="email" type="email" placeholder="Update in your inbox...">
+            <button type="submit">Go</button>
         </form>
         <div class="derechos">
         Copyright 2020. All Rights Reserved

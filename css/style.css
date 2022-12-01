@@ -1,6 +1,6 @@
 /* Estilos Generales*/
 
-@import url(https://fonts.google.com/specimen/Be+Vietnam+Pro) ;
+@import url(https://fonts.google.com/specimen/Be+Vietnam+Pro);
 
 * {
     box-sizing: border-box;
@@ -14,12 +14,13 @@ html {
 
 /*Estilos Header*/
 .header-wraper{
-    align-items: center;
     display: flex;
+    align-items: center;
     font-weight: 500;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1110px;
+    margin-top: 2%;;
 }
 
 .nav-list{
@@ -28,11 +29,14 @@ html {
     font-size: 13px;
     gap: 30px;
 }
-.nav-list :hover{
-    color:rgb (249, 249, 249);
+a:hover{
+    color:#B9B9C1;
+}
+a:link{
+    text-decoration: none;
 }
 
-.nav-button {
+.nav-button{
     background-color: #8B48BF;
     padding: 10px, 25px;
     font-size: 15px;
@@ -40,7 +44,6 @@ html {
     color: #FFFFFF;
     border: none;
     border-radius: 50px;
-    margin-top: 20px;
     width: 134px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
@@ -133,7 +136,7 @@ h1{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 50px 0 50px 0;
 }
@@ -146,49 +149,94 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-direction: row;
     padding: 10px 25px;
-    width: 480px;
-    height: 158px;
+    width: 550px;
+
+}
+.tracks h4{
+    font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: #323851;
+display:flex;
+text-align:left;
+margin-bottom: 15px;
+}
+
+.tracks p{
+font-weight:500;
+font-weight:16.3px;
+line-height:25.52px;
+color:#B3B2B7;
+display:flex;
+text-align:left;
 }
 
 .tracking-company-section-button{
     background-color: #8B48BF;
     border: none;
-    border-radius: 30px;
+    border-radius: 80px;
     color: #FFFFFF;
     font-size: 15px;
-    height: 43px;
+    height: 35px;
     padding: 10px;
-
-
-    width: 60px;
+    width: 150px;
+    margin-right: 20px;
 }
+
 
 /*Estilos de la seccion lo mejor del mes*/
 
 .best-of-the-month-wraper{
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
 }
 .best-of-the-month h3{
     font-size:39.21px;
     font-weight: 700;
-    line-height: 61.41px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.best-of-the-month h4{
+    font-size:16.07px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 40px;
+    color:#242E53;
+}
+.best-of-the-month p{
+    color:#B9B9C1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
     text-align: center;
 }
 .best-of-the-month-article{
-    background-color: #FAFAFA;
-    width: 445px;
-    height: 254px;  
+    background-color: #FAFAFA; 
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    margin-top: 70px;
+    padding: 80px;
+    gap:30px;
 }
-
+.container{
+    position: relative;
+}
 .best-of-the-month img{
-    width: 60px;
-    height: 60px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -120px;
 }
 .best-of-the-month button {
     background-color: #8B48BF;
@@ -198,9 +246,18 @@ h1{
     font-size: 15px;
     height: 44px;
     padding: 10px, 25px;
-    margin-top: 40px;;
+    margin-top: 60px;
     width: 134px;
     }
+
+.best-of-the-month button:hover{
+    background: rgba(139, 72, 191, 0.7);
+    cursor:pointer;
+}
+
+.container-button{
+    text-align: center;
+}    
 
 /*Estilos teams*/
 .teams-wraper{
@@ -227,8 +284,8 @@ width: 100%;
     font-size: 15px;
     height: 44px;
     padding: 10px, 25px;
-    margin-top: 40px;;
     width: 134px;
+    margin-right: 60px;
 }
 .teams h2{
     font-weight: 700;
@@ -273,12 +330,12 @@ gap:80px;
     padding: 0px;
     gap: 219px;
 }
-footer ul{
+footer ul li a{
     color:#FFFFFF;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    width: 90px;
+    width: 100px;
 }
 /*Formulario*/
 footer input{
@@ -328,4 +385,10 @@ form{
     color:#8C8C94;
     font-weight:500;
     font-size:12.5px;
+}
+
+/*Media Queries*/
+
+@media (max-width:480px){
+
 }
