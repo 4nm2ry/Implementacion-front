@@ -20,7 +20,8 @@ html {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1110px;
-    margin-top: 2%;;
+    margin-top: 2%;
+    flex-wrap: nowrap;
 }
 
 .nav-list{
@@ -47,6 +48,9 @@ a:link{
     width: 134px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
+.hamburguer-menu{
+    display: none;
+}
 
 /*Estilos hero*/
 
@@ -60,8 +64,7 @@ a:link{
 }
 
 .hero-img{
-    height: 462px;
-    width:540px;
+    width:100%;
 }
 
 .hero-div{
@@ -71,6 +74,7 @@ a:link{
 }
 
 h1{
+    color:#232C50;
     font-size: 50px;
     font-weight: 700;
     line-height: 57.3px;
@@ -104,13 +108,12 @@ h1{
     gap: 100px;
     max-width: 1110px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding: 40px 0px 40px 0px;
 }  
 .difference-bar{
     align-items: center;
     background-color: #8B48BF;
     color:#FFFFFF;
-    height: 168px;
     width: 100%;
 }
 
@@ -119,7 +122,6 @@ h1{
     font-weight: 700;
     line-height: 41.26px;
     width: 450px;
-    height: 88px;
 }
 
 #difference-bar-p{
@@ -127,7 +129,6 @@ h1{
     font-weight: 500;
     line-height: 24.18px;
     width: 450px;
-    height: 88px;
 }
 /*Estilos sección de progreso de la compañia*/
 
@@ -234,8 +235,6 @@ text-align:left;
 }
 .best-of-the-month img{
     position: absolute;
-    width: 70px;
-    height: 70px;
     top: -120px;
 }
 .best-of-the-month button {
@@ -267,12 +266,11 @@ text-align:left;
     gap: 100px;
     max-width: 1110px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding: 40px 0px 40px 0px;
 }
 .teams{
 background-color: #8B48BF;
 color:#FFFFFF;
-height: 168px;
 width: 100%;
 }
 .teams button{
@@ -292,7 +290,6 @@ width: 100%;
 font-size: 40px;
 line-height: 48px;
 width: 400px;
-height: 96px;
 }
 
 /*Estilos footer*/
@@ -380,15 +377,117 @@ form{
 }
 /*Derechos*/
 .derechos{
-    padding-top: 92px;
+    padding-top: 20px;
+    margin: 0 auto;
     text-align: right;
     color:#8C8C94;
     font-weight:500;
     font-size:12.5px;
+    max-width: 1110px;
 }
 
 /*Media Queries*/
 
 @media (max-width:480px){
 
+    .hero-wraper{
+        flex-wrap: wrap;
+        max-width: 420px;
+    }
+
+    .hero-wraper h1{
+        margin-top: 70px;
+    }
+    .hero-wraper p{
+        margin-top: 25px;
+    }
+    .difference-bar{
+        background-color:#3CDDF3;
+    }
+    .difference-bar-wraper{
+        max-width: 440px;
+        flex-wrap: wrap;
+    }
+    .best-of-the-month-wraper{
+        max-width: 430px;
+
+    }
+
+    .best-of-the-month-article > article:nth-child(1){
+        display: none;
+    }
+
+    .best-of-the-month-article > article:nth-child(3){
+        display: none;
+    }
+    .teams{
+    background-color:#3CDDF3;
+    }
+    .teams-wraper{
+        max-width: 440px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:40px;
+    }
+    .teams h2{
+        width: 280px;
+        text-align: center;
+    }
+    .teams button{
+        background: #232C50;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF;
+        margin: 0;
+    }
+    .footer-wraper{
+        max-width: 420px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap:60px;
+        align-items: center;
+        }
+        
+    .redes-sociales{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap:40px;
+    }
+
+    .derechos{
+        max-width: 420px;
+        text-align: center;
+    }
+
+    .icon{
+        gap:75px;
+    }
+
+    .accesos{
+        gap: 100px;
+        
+    }
+
+    .buscador{
+
+    }
+    .buscador input{
+        width:308px ;
+    }
+
+    .header-wraper{
+        max-width: 400px;
+        padding: 30px 0px;
+    }
+
+    .nav-list-content{
+        display: none;
+    }
+
+    .nav-button-content{
+        display: none;
+    }
+
+    .hamburguer-menu{
+        display: block;
+    }
 }
