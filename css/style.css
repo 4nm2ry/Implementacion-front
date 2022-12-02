@@ -29,10 +29,12 @@
     font-size: 13px;
     gap: 30px;
 }
-.nav-list a{
+
+.nav-list a {
     color: #242E52;
     font-size: 13px;
 }
+
 a:hover {
     color: #B9B9C1;
 }
@@ -152,13 +154,17 @@ h1 {
 
 .tracks {
     align-items: flex-start;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     flex-direction: row;
     padding: 10px 25px;
     width: 550px;
 
+}
+
+.track-title {
+    display: flex;
+    align-items: center;
 }
 
 .tracks h4 {
@@ -171,7 +177,6 @@ h1 {
     color: #323851;
     display: flex;
     text-align: left;
-    margin-bottom: 15px;
 }
 
 .tracks p {
@@ -181,6 +186,7 @@ h1 {
     color: #B3B2B7;
     display: flex;
     text-align: left;
+    padding: 20px 0 0 70px;
 }
 
 .tracking-company-section-button {
@@ -191,7 +197,7 @@ h1 {
     font-size: 15px;
     height: 35px;
     padding: 10px;
-    width: 150px;
+    width: 50px;
     margin-right: 20px;
 }
 
@@ -414,6 +420,8 @@ form {
 
 @media (max-width:480px) {
 
+/***** HEADER *****/
+
     .header-wraper {
         max-width: 400px;
         padding: 30px 0px;
@@ -431,6 +439,8 @@ form {
         display: block;
     }
 
+/***** HERO *****/
+
     .hero-wraper {
         flex-wrap: wrap;
         max-width: 420px;
@@ -444,6 +454,7 @@ form {
         margin-top: 25px;
     }
 
+/***** DIFERENCE-BAR *****/
     .difference-bar {
         background-color: #3CDDF3;
     }
@@ -452,7 +463,23 @@ form {
         max-width: 440px;
         flex-wrap: wrap;
     }
-    
+
+/***** TRACKING-COMPANY-SECTION *****/
+    .tracks{
+    padding: 10px 0px 0px 30px;
+    }
+
+    .track-title {
+    background-color:rgba(139, 72, 191, 0.3);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    }
+
+    .tracks p {
+    padding: 20px 0 10px 0px;
+    }
+
+/***** BEST-OF-THE-MONTH-SECTION *****/
     .best-of-the-month-wraper {
         max-width: 430px;
 
@@ -466,6 +493,11 @@ form {
         display: none;
     }
 
+    .best-of-the-month button{
+        margin-top: 30px;
+    }
+
+/***** TEAMS-BAR *****/
     .teams {
         background-color: #3CDDF3;
     }
@@ -489,6 +521,7 @@ form {
         margin: 0;
     }
 
+/***** FOOTER *****/
     .footer-wraper {
         max-width: 420px;
         flex-wrap: wrap;
