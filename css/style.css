@@ -6,14 +6,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    }
-
-html {
     font-family: "Be Vietnam", sans-serif;
-    }
+    text-decoration: none;
+}
 
-/*Estilos Header*/
-.header-wraper{
+/***** HEADER *****/
+.header-wraper {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -24,20 +22,21 @@ html {
     flex-wrap: nowrap;
 }
 
-.nav-list{
-    color:#242E52;
+.nav-list {
+    color: #242E52;
     display: inline-flex;
     font-size: 13px;
     gap: 30px;
 }
-a:hover{
-    color:#B9B9C1;
+.nav-list a{
+    color: #242E52;
+    font-size: 13px;
 }
-a:link{
-    text-decoration: none;
+a:hover {
+    color: #B9B9C1;
 }
 
-.nav-button{
+.nav-button {
     background-color: #8B48BF;
     padding: 10px, 25px;
     font-size: 15px;
@@ -48,13 +47,14 @@ a:link{
     width: 134px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
-.hamburguer-menu{
+
+.hamburguer-menu {
     display: none;
 }
 
-/*Estilos hero*/
+/***** HERO *****/
 
-.hero-wraper{
+.hero-wraper {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -63,25 +63,25 @@ a:link{
     padding-bottom: 90px;
 }
 
-.hero-img{
-    width:100%;
+.hero-img {
+    width: 100%;
 }
 
-.hero-div{
+.hero-div {
     height: 462px;
     text-align: end;
     width: 400px;
 }
 
-h1{
-    color:#232C50;
+h1 {
+    color: #232C50;
     font-size: 50px;
     font-weight: 700;
     line-height: 57.3px;
     margin-top: 20px;
 }
 
-.hero-p{
+.hero-p {
     font-weight: 500;
     font-size: 16.56px;
     line-height: 26px;
@@ -96,43 +96,51 @@ h1{
     font-size: 15px;
     height: 44px;
     padding: 10px, 25px;
-    margin-top: 40px;;
+    margin-top: 40px;
+    ;
     width: 134px;
-    }
+}
 
-    /*Estilos barra de diferencias*/
+/***** DIFERENCE-BAR *****/
 
-.difference-bar-wraper{
+.difference-bar {
+    align-items: center;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.difference-bar-wraper {
     display: flex;
     justify-content: center;
     gap: 100px;
     max-width: 1110px;
     margin: 0 auto;
     padding: 40px 0px 40px 0px;
-}  
-.difference-bar{
-    align-items: center;
-    background-color: #8B48BF;
-    color:#FFFFFF;
-    width: 100%;
 }
 
-#difference-bar-h2{
+#difference-bar-h2 {
     font-size: 25px;
     font-weight: 700;
     line-height: 41.26px;
     width: 450px;
 }
 
-#difference-bar-p{
+#difference-bar-p {
     font-size: 16px;
     font-weight: 500;
     line-height: 24.18px;
     width: 450px;
 }
-/*Estilos sección de progreso de la compañia*/
 
-.tracking-company-section-wraper{
+/***** TRACKING-COMPANY-SECTION *****/
+
+.tracking-company-section {
+    background-color: #FAFAFA;
+    width: 100%;
+}
+
+.tracking-company-section-wraper {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
@@ -141,11 +149,8 @@ h1{
     flex-wrap: wrap;
     padding: 50px 0 50px 0;
 }
-.tracking-company-section{
-    background-color: #FAFAFA;
-    width: 100%;
-}
-.tracks{
+
+.tracks {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -155,29 +160,30 @@ h1{
     width: 550px;
 
 }
-.tracks h4{
+
+.tracks h4 {
     font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 23px;
-display: flex;
-align-items: center;
-color: #323851;
-display:flex;
-text-align:left;
-margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #323851;
+    display: flex;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
-.tracks p{
-font-weight:500;
-font-weight:16.3px;
-line-height:25.52px;
-color:#B3B2B7;
-display:flex;
-text-align:left;
+.tracks p {
+    font-weight: 500;
+    font-weight: 16.3px;
+    line-height: 25.52px;
+    color: #B3B2B7;
+    display: flex;
+    text-align: left;
 }
 
-.tracking-company-section-button{
+.tracking-company-section-button {
     background-color: #8B48BF;
     border: none;
     border-radius: 80px;
@@ -189,10 +195,9 @@ text-align:left;
     margin-right: 20px;
 }
 
+/***** BEST-OF-THE-MONTH-SECTION *****/
 
-/*Estilos de la seccion lo mejor del mes*/
-
-.best-of-the-month-wraper{
+.best-of-the-month-wraper {
     max-width: 1400px;
     margin: 0 auto;
     padding: 50px 0 50px 0;
@@ -200,43 +205,51 @@ text-align:left;
     flex-direction: column;
     height: 700px;
 }
-.best-of-the-month h3{
-    font-size:39.21px;
+
+.best-of-the-month h3 {
+    font-size: 39.21px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
 }
-.best-of-the-month h4{
-    font-size:16.07px;
+
+.best-of-the-month-article {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 70px;
+    padding: 80px;
+    gap: 30px;
+}
+
+.container {
+    position: relative;
+}
+
+.best-of-the-month img {
+    position: absolute;
+    top: -120px;
+    left: calc(50% - 35px);
+}
+
+.best-of-the-month h4 {
+    font-size: 16.07px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
     line-height: 40px;
-    color:#242E53;
+    color: #242E53;
 }
-.best-of-the-month p{
-    color:#B9B9C1;
+
+.best-of-the-month p {
+    color: #B9B9C1;
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
     text-align: center;
 }
-.best-of-the-month-article{
-    background-color: #FAFAFA; 
-    display: flex;
-    flex-direction:row;
-    text-align: center;
-    margin-top: 70px;
-    padding: 80px;
-    gap:30px;
-}
-.container{
-    position: relative;
-}
-.best-of-the-month img{
-    position: absolute;
-    top: -120px;
-}
+
 .best-of-the-month button {
     background-color: #8B48BF;
     border: none;
@@ -247,19 +260,26 @@ text-align:left;
     padding: 10px, 25px;
     margin-top: 60px;
     width: 134px;
-    }
-
-.best-of-the-month button:hover{
-    background: rgba(139, 72, 191, 0.7);
-    cursor:pointer;
 }
 
-.container-button{
-    text-align: center;
-}    
+.best-of-the-month button:hover {
+    background: rgba(139, 72, 191, 0.7);
+    cursor: pointer;
+}
 
-/*Estilos teams*/
-.teams-wraper{
+.container-button {
+    text-align: center;
+}
+
+/***** TEAMS-BAR *****/
+
+.teams {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.teams-wraper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,16 +288,19 @@ text-align:left;
     margin: 0 auto;
     padding: 40px 0px 40px 0px;
 }
-.teams{
-background-color: #8B48BF;
-color:#FFFFFF;
-width: 100%;
+
+.teams h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    width: 400px;
 }
-.teams button{
+
+.teams button {
     background: #FFFFFF;
     border: none;
     border-radius: 50px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     color: #8B48BF;
     font-size: 15px;
     height: 44px;
@@ -285,60 +308,57 @@ width: 100%;
     width: 134px;
     margin-right: 60px;
 }
-.teams h2{
-    font-weight: 700;
-font-size: 40px;
-line-height: 48px;
-width: 400px;
-}
 
-/*Estilos footer*/
-footer{
+/***** FOOTER *****/
+
+footer {
     background-color: #1E1E26;
     padding: 50px 0px 50px 0px;
 }
-.footer-wraper{
+
+.footer-wraper {
     display: flex;
-    justify-content:space-around;
-    align-items:flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
     gap: 100px;
     max-width: 1110px;
     margin: 0 auto;
 }
-/*Seccion de redes sociales*/
-.redes-sociales{
-display: flex;
-flex-direction: column;
-gap:80px;
+
+.social-networks {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
-.icon{
+.icon {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 13px;
 }
-/*Seccion de accesos*/
-.accesos{
+
+.access {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 219px;
 }
-footer ul li a{
-    color:#FFFFFF;
+
+footer ul li a {
+    color: #FFFFFF;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     width: 100px;
 }
-/*Formulario*/
-footer input{
+
+footer input {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     padding: 10px;
     gap: 10px;
     width: 201px;
@@ -347,7 +367,8 @@ footer input{
     border-radius: 50px;
     border: none;
 }
-footer button{
+
+footer button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -361,133 +382,142 @@ footer button{
     color: #FFFFFF;
     font-style: normal;
     font-weight: 500;
-    border:none;
+    border: none;
 }
-input :placeholder{
-    color:#A0A0A0;
+
+input :placeholder {
+    color: #A0A0A0;
 }
-form{
+
+form {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
 }
-.buscador{
+
+.seeker {
     display: flex;
     flex-direction: column;
 }
-/*Derechos*/
-.derechos{
+
+.rights {
     padding-top: 20px;
     margin: 0 auto;
     text-align: right;
-    color:#8C8C94;
-    font-weight:500;
-    font-size:12.5px;
+    color: #8C8C94;
+    font-weight: 500;
+    font-size: 12.5px;
     max-width: 1110px;
 }
 
-/*Media Queries*/
+/***** MEDIA-QUERIES *****/
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-    .hero-wraper{
+    .header-wraper {
+        max-width: 400px;
+        padding: 30px 0px;
+    }
+
+    .nav-list-content {
+        display: none;
+    }
+
+    .nav-button-content {
+        display: none;
+    }
+
+    .hamburguer-menu {
+        display: block;
+    }
+
+    .hero-wraper {
         flex-wrap: wrap;
         max-width: 420px;
     }
 
-    .hero-wraper h1{
+    .hero-wraper h1 {
         margin-top: 70px;
     }
-    .hero-wraper p{
+
+    .hero-wraper p {
         margin-top: 25px;
     }
-    .difference-bar{
-        background-color:#3CDDF3;
+
+    .difference-bar {
+        background-color: #3CDDF3;
     }
-    .difference-bar-wraper{
+
+    .difference-bar-wraper {
         max-width: 440px;
         flex-wrap: wrap;
     }
-    .best-of-the-month-wraper{
+    
+    .best-of-the-month-wraper {
         max-width: 430px;
 
     }
 
-    .best-of-the-month-article > article:nth-child(1){
+    .best-of-the-month-article>article:nth-child(1) {
         display: none;
     }
 
-    .best-of-the-month-article > article:nth-child(3){
+    .best-of-the-month-article>article:nth-child(3) {
         display: none;
     }
-    .teams{
-    background-color:#3CDDF3;
+
+    .teams {
+        background-color: #3CDDF3;
     }
-    .teams-wraper{
+
+    .teams-wraper {
         max-width: 440px;
         flex-wrap: wrap;
         justify-content: center;
-        gap:40px;
+        gap: 40px;
     }
-    .teams h2{
+
+    .teams h2 {
         width: 280px;
         text-align: center;
     }
-    .teams button{
+
+    .teams button {
         background: #232C50;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
         color: #FFFFFF;
         margin: 0;
     }
-    .footer-wraper{
+
+    .footer-wraper {
         max-width: 420px;
         flex-wrap: wrap;
         flex-direction: column-reverse;
-        gap:60px;
+        gap: 60px;
         align-items: center;
-        }
-        
-    .redes-sociales{
-        flex-direction: column-reverse;
-        text-align: center;
-        gap:40px;
     }
 
-    .derechos{
+    .social-networks {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .rights {
         max-width: 420px;
         text-align: center;
     }
 
-    .icon{
-        gap:75px;
+    .icon {
+        gap: 75px;
     }
 
-    .accesos{
+    .access {
         gap: 100px;
-        
-    }
-
-    .buscador{
 
     }
-    .buscador input{
-        width:308px ;
-    }
 
-    .header-wraper{
-        max-width: 400px;
-        padding: 30px 0px;
-    }
-
-    .nav-list-content{
-        display: none;
-    }
-
-    .nav-button-content{
-        display: none;
-    }
-
-    .hamburguer-menu{
-        display: block;
+    .seeker input {
+        width: 308px;
     }
 }
